@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mozaika</title>
+        <link rel="icon" href="../img/icon">
+        <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
+        <script src="mosaic.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <center>
+                <h1 id="header">Mozaika</h1>
+
+                <p id="text"></p>
+                <table id="mosaic">
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <img id="pic1" class="height100" src="./img/1.png" onclick="hide('q1','pic1'); changeBackground('backGr1');">
+                                <img id="q1" class="h100" onclick="hide('pic1', 'q1'); changeBackground('backGr');" src="./img/marks.png">
+                            </center>
+                        </td>
+                        <td colspan="2">
+                            <center>
+                                <img id="pic2" class="height100" src="./img/2.png" onclick="hide('q2','pic2'); addingText(''); ">
+                                <img id="q2" class="h100" src="./img/marks.png" onclick="hide('pic2','q2'); addingText('Baltų Dievai');">
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                                <img id="pic3" class="height100" src="./img/3.png" onclick="hide('q3','pic3'); changeFontColor('white');">
+                                <img id="q3" class="h100" src="./img/marks.png" onclick="hide('pic3','q3'); changeFontColor('rgb(106, 136, 95)');">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic4" class="height100" src="./img/4.png" onclick="hide('q4','pic4'); changeBackgroundImage1();">
+                                <img id="q4" class="h100" src="./img/marks.png" onclick="hide('pic4','q4'); changeBackgroundImage();">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic5" class="height100" src="./img/5.png" onclick="hide('q5','pic5'); changeTableBackground('');">
+                                <img id="q5" class="h100" src="./img/marks.png" onclick="hide('pic5','q5'); changeTableBackground('rgb(181, 214, 169)');">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic6" class="height100" src="./img/6.png" onclick="hide('q6','pic6'); changeFontFamily('Verdana');">
+                                <img id="q6" class="h100" src="./img/marks.png" onclick="hide('pic6','q6'); changeFontFamily('Roboto');">
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <center>
+                                <img id="pic7" class="height100" src="./img/7.png" onclick="hide('q7','pic7'); addingLetterSpacing('0px');">
+                                <img id="q7" class="h100" src="./img/marks.png" onclick="hide('pic7','q7'); addingLetterSpacing('5px'); ">
+                            </center>
+                        </td>
+                        <td colspan="2">
+                            <center>
+                                <img id="pic8" class="height100" src="./img/8.png" onclick="hide('q8','pic8'); changeBorder('');">
+                                <img id="q8" class="h100" src="./img/marks1.png" onclick="hide('pic8','q8'); changeBorder('10px dotted rgb(106, 136, 95)');">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic9" class="height100" src="./img/9.png" onclick="hide('q9','pic9'); changeBorder('');">
+                                <img id="q9" class="h100" src="./img/marks.png" onclick="hide('pic9','q9'); changeBorder('10px solid rgb(106, 136, 95)');">
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">
+                            <center>
+                                <img id="pic10" class="height200" src="./img/10.png" onclick="hide('q10','pic10');  changeFontColor1('white')">
+                                <img id="q10" class="h100" src="./img/marks1.png" onclick="hide('pic10','q10'); changeFontColor1('rgb(106, 136, 95')">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic11" class="height100" src="./img/11.png" onclick="hide('q11','pic11');addingLetterSpacing1('0px')">
+                                <img id="q11" class="h100" src="./img/marks.png" onclick="hide('pic11','q11');addingLetterSpacing1('3px'); ">
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <img id="pic12" class="height100" src="./img/12.png" onclick="hide('q12','pic12'); changeFontFamily1('Verdana');">
+                                <img id="q12" class="h100" src="./img/marks.png" onclick="hide('pic12','q12'); changeFontFamily1('Roboto');">
+                            </center>
+                        </td>
+                        <td rowspan="2">
+                            <center>
+                                <img id="pic13" class="height200" src="./img/13.png" onclick="hide('q13','pic13'); bold('normal')">
+                                <img id="q13" class="h100" src="./img/marks1.png" onclick="hide('pic13','q13'); bold('bold');">
+                            </center>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <img id="pic14" class="height100" src="./img/14.png" onclick="hide('q14','pic14')">
+                                <img id="q14" class="h100" src="./img/marks.png" onclick="hide('pic14','q14')">
+                            </center>
+                        </td>
+                    </tr>
+                    
+                </table>
+            </center>
+        </main>
+        <footer>
+            <nav>
+                <center>
+                    <hr>
+                    <a href='../index.html'>Pagrindinis</a>
+                    <a href="../students/students.html">Studentai</a>
+                    <a href="../classes/classes.html">Klasės</a>
+                    <a href="../groups/group.html">Grupės</a>
+                    <a href="../lectures/lecture.html">Paskaitos</a>
+                    <a href="../mosaic/mosaic.html"><mark style="background-color: rgb(163, 245, 130);">Mozaika</mark></a>
+                    <a href="../table/table.html">Lentelės generavimas</a>
+                </center>
+            </nav>
+        </footer>
+    </body>
+</html>
