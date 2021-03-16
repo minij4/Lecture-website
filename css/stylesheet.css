@@ -9,14 +9,15 @@ body {
 }
 
 h1 {
-    margin: 20px;
+    margin: 10px;
     text-transform: uppercase;
     color:white;
+    text-align: center;
 }
 #text {
     margin: 20px 150px;
 }
-a {
+footer a {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
@@ -35,7 +36,6 @@ table {
 }
 td {
     border: 3px solid black;
-    
 }
 
 /* mosaic */
@@ -65,9 +65,94 @@ td {
 
 
 /* table */
+#table td {
+    padding: 50px;
+    border:4px solid rgb(74, 102, 64);
+}
 
 
-#generateTable {
-    padding: 10px 5px;
-    background-color:rgb(106, 136, 95)
+
+/* profile */
+
+#profile {
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#profile input {
+    margin-bottom: 15px; 
+    width: 350px;
+}
+#profile label {
+    font-size:13px;
+}
+.width25 {
+    width: 25px !important;
+}
+
+.button {
+    width: 350px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+#data{
+    margin-bottom: 25px;
+    margin-left: 25px;
+}
+#education {
+    width: 350px;
+}
+
+#ref {
+    display: none;
+}
+
+/* snake */
+
+#fftable td{
+    padding: 20px;
+    margin: 0px ;
+    border: none !important;
+
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+#fftable {
+    margin: 0px;
+    padding: 0px;
+    border:10px solid rgb(74, 102, 64);
+    border-collapse: separate;
+    border-spacing: 0px;
+    z-index: 100;
+    height: 80%;
+    
+}
+#snake{
+    background-image: url("../snake/image/head2.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#restartButton {
+    color: rgb(74, 102, 64); 
+    text-decoration: none; 
+    padding: 20px 50px; 
+    border: 2px solid rgb(74, 102, 64); 
+}
+#score{
+    margin-bottom: 10px;
+    color: white;
+}
+
+#gameOver {
+    font-size:50px; 
+    text-align: center; 
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+#result{
+    text-align: center; 
+    margin-bottom: 80px;
 }

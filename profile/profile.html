@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Anketa</title>
+        <link rel="icon" href="../img/icon">
+        <link rel="stylesheet" href="../css/stylesheet.css" type="text/css">
+        <script src="profile.js" defer></script>
+    </head>
+    <body>
+        <main>
+                <h1>Anketa</h1>
+                <hr>
+                <form id="profile">
+                        <label>Vardas </label><br>
+                        <input id="name" name="name" autocomplete="off"><br>
+                        <label>Pavardė </label><br>
+                        <input id="surnaname" name="surname" autocomplete="off"><br>
+                        <label>Elektroninis paštas</label><br>
+                        <input id="mail" name="mail" autocomplete="off"><br>
+    
+
+    
+                        <label for="birthday">Gimimo data</label><br>
+                        <input type="date" name="date" id="birthday"><br>
+    
+
+
+                        <label for="gender">Lytis</label><br>
+                        <input class="width25" type="radio" id="male" name="gender" value="Vyras">Vyras
+                        <input class="width25"  type="radio" id="female" name="gender" value="Moteris">Moteris
+                        <input class="width25" type="radio" id="other" name="gender" value="Kita">Kita
+                        <br>
+
+
+
+                        <label for="education">Išsilavinimas</label><br>
+                        <select id="education" name="education">
+                            <option name="education" value="pagrindinis">Pagrindinis</option>
+                            <option name="education" value="pagrindinis">Vidurinis</option>
+                            <option name="education" value="profesinis">Profesinis</option>
+                            <option name="education" value="aukstasis">Aukštasis</option>
+                        </select><br><br><br>
+
+
+                        <input class="width25" type="checkbox" id="news">
+                        <label for="news">Ar norite gauti naujienas elektroniniu paštu?</label><br><br>
+                      
+                </form>
+
+                <button class="button" onclick="submit(); showButton('ref');">Pateikti</button>                 
+                <hr>
+
+                <div id="data"></div>
+                <br>
+                <a href="profile.html"><button id="ref" class="button">Pateikti iš naujo</button></a>
+        </main>
+        <footer>
+            <nav>
+                <center>
+                    <hr>
+                    <a href='../index.html'>Pagrindinis</a>
+                    <a href="../students/students.html">Studentai</a>
+                    <a href="../classes/classes.html">Klasės</a>
+                    <a href="../groups/group.html">Grupės</a>
+                    <a href="../lectures/lecture.html">Paskaitos</a>
+                    <a href="../mosaic/mosaic.html">Mozaika</a>
+                    <a href="../table/table.html">Lentelė</a>
+                    <a href="../profile/profile.html"><mark style="background-color: rgb(163, 245, 130);">Anketa</mark></a>
+                    <a href="../snake/snake.html">Gyvatėlė</a>
+                </center>
+            </nav>
+
+            
+        </footer>
+
+
+    </body>
+</html>
